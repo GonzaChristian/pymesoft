@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Solicita una demostración o cotización de PymeSoft.">
+  <meta name="theme-color" content="#07111f">
+  <title>Contacto | PymeSoft</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <img class="brand-mark" src="img/logo-icon.png" alt="PymeSoft Logo">
+      <span class="brand-copy"><strong>PymeSoft</strong><small>Software para pequeñas empresas</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <nav class="nav-links" id="navLinks">
+      <a class="nav-link" href="index.html">Inicio</a>
+      <div class="dropdown">
+        <a class="nav-link" href="soluciones.html">Soluciones ▾</a>
+        <div class="dropdown-menu">
+          <a href="soluciones/ventas.html"><span class="dropdown-icon">V</span><span><strong>Ventas</strong><small>Productos, clientes y reportes</small></span></a>
+          <a href="soluciones/inventario.html"><span class="dropdown-icon">S</span><span><strong>Inventario</strong><small>Stock, movimientos y proveedores</small></span></a>
+          <a href="soluciones/citas-pedidos.html"><span class="dropdown-icon">C</span><span><strong>Citas y pedidos</strong><small>Reservas, atención y seguimiento</small></span></a>
+          <a href="soluciones/personalizado.html"><span class="dropdown-icon">+</span><span><strong>Personalizado</strong><small>Una solución hecha para tu negocio</small></span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="precios.html">Planes</a>
+      <a class="nav-link" href="nosotros.html">Nosotros</a>
+      <a class="nav-link active" href="contacto.html">Contacto</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema"><span id="themeIcon">☾</span><span id="themeText">Oscuro</span></button>
+      <a class="btn btn-sm" href="contacto.html">Solicitar demo</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container page-hero-grid">
+      <div class="reveal">
+        <div class="breadcrumb"><a href="index.html">Inicio</a><span>›</span><strong>Contacto</strong></div>
+        <span class="kicker">Hablemos</span>
+        <h1>Cuéntanos qué necesita <span class="gradient-text">tu negocio.</span></h1>
+        <p>Podemos orientarte hacia una solución existente o analizar contigo una necesidad específica.</p>
+        <div class="contact-cards">
+          <article class="contact-card"><small>Correo</small><strong>contacto@pymesoft.pe</strong></article>
+          <article class="contact-card"><small>Atención</small><strong>Lunes a sábado · 9:00 a. m. – 6:00 p. m.</strong></article>
+          <article class="contact-card"><small>Respuesta estimada</small><strong>Dentro del horario de atención</strong></article>
+        </div>
+      </div>
+      <img class="page-photo reveal delay-1" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=85" alt="Atención y soporte tecnológico">
+    </div>
+  </section>
+
+  <section class="section section-soft">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <span class="kicker">Solicitar información</span>
+        <h2 class="section-title">Te ayudamos a dar el siguiente paso.</h2>
+        <p class="section-copy">Completa el formulario con información básica. Para una versión real, podemos conectar este formulario a PHP + MySQL y correo electrónico.</p>
+      </div>
+
+      <form class="contact-form reveal delay-1" id="contactForm">
+        <div class="form-row">
+          <label>Nombre<input name="nombre" type="text" placeholder="Tu nombre" required></label>
+          <label>Negocio<input name="negocio" type="text" placeholder="Nombre del negocio"></label>
+        </div>
+        <div class="form-row">
+          <label>Correo<input name="correo" type="email" placeholder="correo@ejemplo.com" required></label>
+          <label>Teléfono<input name="telefono" type="tel" placeholder="999 999 999"></label>
+        </div>
+        <div class="form-row">
+          <label>Tipo de negocio
+            <select name="tipo">
+              <option>Selecciona</option><option>Tienda / comercio</option><option>Restaurante</option><option>Servicios</option><option>Veterinaria</option><option>Otro</option>
+            </select>
+          </label>
+          <label>Solución de interés
+            <select name="solucion" required>
+              <option value="">Selecciona</option><option>PymeSoft Ventas</option><option>PymeSoft Inventario</option><option>Citas y pedidos</option><option>Software personalizado</option>
+            </select>
+          </label>
+        </div>
+        <label>Mensaje<textarea name="mensaje" rows="5" placeholder="Cuéntanos brevemente qué proceso quieres mejorar..." required></textarea></label>
+        <button class="btn btn-block" type="submit">Enviar solicitud →</button>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html">
+        <img class="brand-mark" src="img/logo-icon.png" alt="PymeSoft Logo">
+        <span class="brand-copy"><strong>PymeSoft</strong><small>Tu negocio, más simple y digital.</small></span>
+      </a>
+      <p>Soluciones de gestión simples para pequeñas empresas y emprendimientos que quieren crecer con tecnología.</p>
+    </div>
+    <div class="footer-col"><strong>Empresa</strong><a href="nosotros.html">Nosotros</a><a href="precios.html">Planes</a><a href="contacto.html">Contacto</a></div>
+    <div class="footer-col"><strong>Soluciones</strong><a href="soluciones/ventas.html">Ventas</a><a href="soluciones/inventario.html">Inventario</a><a href="soluciones/citas-pedidos.html">Citas y pedidos</a></div>
+    <div class="footer-col"><strong>Ayuda</strong><a href="contacto.html">Solicitar demo</a><a href="contacto.html">Cotización</a><a href="contacto.html">Soporte</a></div>
+  </div>
+  <div class="container footer-bottom"><span>© <span data-year></span> PymeSoft.</span><span>Proyecto académico de Computación e Informática.</span></div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
