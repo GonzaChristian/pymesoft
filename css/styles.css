@@ -386,6 +386,17 @@ body.dark .gradient-text {
   pointer-events: none;
 }
 
+/* Invisible bridge that covers the gap between the trigger and dropdown menu,
+   preventing the menu from disappearing when moving the mouse to it */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  width: 100%;
+  height: 18px;
+}
+
 .dropdown:hover .dropdown-menu,
 .dropdown:focus-within .dropdown-menu {
   opacity: 1;
